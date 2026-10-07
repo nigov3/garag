@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background-color: #FDFBF7;
+  overscroll-behavior: none;
+}
+
+/* Hide scrollbar but allow scrolling */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth scrolling for horizontal carousels */
+.scroll-smooth-x {
+  scroll-behavior: smooth;
+}
